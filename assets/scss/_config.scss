@@ -1,0 +1,33 @@
+// COLORS
+$mainColor: #096bce;
+$black: #222;
+$textColor: #333335;
+$textGray: #789;
+
+// MIXINS
+@mixin grid_center {
+	display: grid;
+	place-content: center;
+}
+
+@mixin mobile {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin hideOnPc {
+	@media (min-width: 768px) {
+		display: none !important;
+	}
+}
+@mixin hideOnMobile {
+	@media (max-width: 767px) {
+		display: none !important;
+	}
+}

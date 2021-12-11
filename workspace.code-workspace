@@ -10,5 +10,17 @@
 			"path": "..\\..\\.."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveSassCompile.settings.autoprefix": null,
+		"liveSassCompile.settings.includeItems": [
+			"assets/scss/*"
+		],
+		"liveSassCompile.settings.formats": [
+			{
+				"extensionName": ".css",
+				"format": "compressed",
+				"savePath": "/"
+			}
+		],
+	}
 }

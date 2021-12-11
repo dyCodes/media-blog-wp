@@ -1,0 +1,152 @@
+@import './config';
+@import './base';
+@import './components';
+@import './layout';
+
+/*!----- MAIN -------*/
+.section_title {
+	text-align: center;
+	padding-bottom: 10px;
+
+	h2 {
+		text-transform: uppercase;
+	}
+	p {
+		text-transform: capitalize;
+	}
+}
+
+/*!----- HERO SECTION -------*/
+#hero {
+	padding: 18px 0;
+
+	#post_slider_hero {
+		padding-bottom: 35px;
+
+		.swiper-slide {
+			border-radius: 2px;
+			overflow: hidden;
+		}
+		article {
+			min-height: 380px;
+			height: 70vh;
+			max-height: 568px;
+
+			img {
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
+				max-height: unset;
+			}
+
+			.card-body {
+				width: 100%;
+				padding: 16px 20px;
+				padding-top: 50px;
+				position: absolute;
+				bottom: 0;
+				background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
+
+				.entry-meta li {
+					a,
+					.bi {
+						color: #ddd;
+					}
+				}
+				.category {
+					position: absolute;
+					top: 10px;
+					a {
+						color: #fff !important;
+						font-size: 13px;
+						padding: 4px 15px;
+						margin-right: 10px;
+						background: $mainColor;
+						border: 1px solid $mainColor;
+						border-radius: 16px;
+						text-transform: uppercase;
+						margin-bottom: 14px;
+					}
+				}
+				.entry-title {
+					font-size: 22px;
+					a {
+						color: #fff;
+					}
+				}
+			}
+		}
+		.swiper-button-next,
+		.swiper-button-prev {
+			color: #fff;
+			width: 45px;
+			height: 45px;
+			top: 46%;
+			background: rgba(34, 34, 34, 0.35);
+			border-radius: 50%;
+			transition: 0.3s;
+
+			&::after {
+				font-size: 24px;
+			}
+			&:hover {
+				transform: scale(1.07);
+				background: rgba(34, 34, 34, 0.6);
+			}
+		}
+		.swiper-pagination.swiper-pagination-bullets {
+			bottom: 20px;
+			.swiper-pagination-bullet-active {
+				background: $mainColor;
+			}
+		}
+	}
+}
+
+/*!----- BLOG POST LOOP -------*/
+article.card {
+	margin-bottom: 30px;
+	box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+
+	img {
+		object-fit: cover;
+		max-height: 360px;
+	}
+	.entry-title {
+		font-size: 22px;
+	}
+}
+
+/*!----- SINGLE POST PAGE -------*/
+body.single-post {
+	article {
+		.post-thumbnail {
+			margin: 16px 0;
+		}
+	}
+	.entry-footer {
+		padding: 18px 0;
+		border-top: 1px solid #ddd;
+
+		.tags a {
+			font-size: 13px;
+			padding: 4px 12px;
+
+			&:first-of-type {
+				color: #fff;
+				border-color: $black;
+				background-color: #212529;
+				cursor: default;
+			}
+		}
+	}
+}
+
+section.not-found {
+	text-align: center;
+	margin: 20px;
+}
+
+/*!----- RESPONSIVE STYLES -------*/
+@include tablet {
+}
