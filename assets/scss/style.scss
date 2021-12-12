@@ -128,15 +128,20 @@ body.single-post {
 		padding: 18px 0;
 		border-top: 1px solid #ddd;
 
-		.tags a {
-			font-size: 13px;
-			padding: 4px 12px;
+		.tags {
+			b {
+				padding-right: 10px;
+			}
+			a {
+				font-size: 13px;
+				padding: 4px 12px;
 
-			&:first-of-type {
-				color: #fff;
-				border-color: $black;
-				background-color: #212529;
-				cursor: default;
+				// &:first-of-type {
+				// 	color: #fff;
+				// 	border-color: $black;
+				// 	background-color: #212529;
+				// 	cursor: default;
+				// }
 			}
 		}
 	}
