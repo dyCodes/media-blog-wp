@@ -36,6 +36,25 @@ function media_blog_pingback_header()
 add_action('wp_head', 'media_blog_pingback_header');
 
 /**
+ * Generate custom search form
+ *
+ * @param string $form Form HTML.
+ * @return string Modified form HTML.
+ */
+function media_blog_search_form($form)
+{
+	$form = '<form role="search" class="search-form input-group" method="get" action="' . home_url('/') . '" >
+        <label><span class="screen-reader-text">' . __('Search for:', 'media-blog') . '</label>
+        <input type="search" class="form-control" placeholder="' . esc_attr_x("Search ...", "placeholder", "media-blog") . '" value="' . get_search_query() . '" name="s" />
+
+        <button type="submit" class="btn" value="' . esc_attr__('Search', 'media-blog') . '"><i class="bi bi-search"></i></button> 
+		</form>';
+
+	return $form;
+}
+add_filter('get_search_form', 'media_blog_search_form');
+
+/**
  * Change the excerpt more string
  */
 function media_blog_excerpt_more($more)

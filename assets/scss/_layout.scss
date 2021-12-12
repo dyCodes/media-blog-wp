@@ -18,11 +18,11 @@
 				max-width: 225px;
 			}
 		}
-		.search-form {
+		
+		#searchForm {
 			width: 50%;
 			form {
-				max-width: 360px;
-				height: 38px;
+				max-width: 380px;
 				margin-left: auto;
 
 				input {
@@ -236,7 +236,7 @@ aside#secondary {
 		.top_navbar {
 			justify-content: center;
 
-			.search-form {
+			#searchForm {
 				transform: translateY(-100vh);
 				width: 100vw;
 				height: 100vh;

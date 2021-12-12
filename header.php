@@ -49,8 +49,12 @@
 						</p>
 					<?php endif; ?>
 				</div>
+
 				<!-- Search Form -->
-				<?php get_search_form() ?>
+				<div id="searchForm">
+					<?php get_search_form() ?>
+					<div class="overlay"></div>
+				</div>
 			</div>
 
 			<!-- Main NavBar -->

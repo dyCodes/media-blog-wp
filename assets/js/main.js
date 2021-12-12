@@ -32,12 +32,12 @@ const scrollto = (elem) => {
 	console.log('Main.js');
 
 	// SHOW SEARCH FORM ON SEARCHBTN CLICK
-	let searchForm = selectElem('#header .search-form');
+	let searchForm = selectElem('#searchForm');
 	selectElem('#searchBtn').addEventListener('click', () => {
 		searchForm.classList.add('slideUp');
-		selectElem('#header .search-form form input').focus();
+		selectElem('#searchForm input').focus();
 	});
-	selectElem('#header .search-form .overlay').addEventListener('click', () => {
+	selectElem('#searchForm .overlay').addEventListener('click', () => {
 		searchForm.classList.remove('slideUp');
 	});
 
