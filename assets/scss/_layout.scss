@@ -188,17 +188,19 @@ aside#secondary {
 
 /*!----- FOOTER -------*/
 #footer {
-	color: #bbb;
-	padding: 10px;
+	padding: 20px;
 	background: #111;
-	text-align: center;
 	margin-top: 40px;
 
 	.container .col-md-6 {
 		margin: 10px auto;
 	}
+	p {
+		color: #bbb;
+		margin: 0;
+	}
 	.social a i {
-		font-size: 19px;
+		font-size: 22px;
 	}
 
 	// Back2Top BUTTON
@@ -295,6 +297,13 @@ aside#secondary {
 		}
 		#sidebar {
 			padding: 30px 20px;
+		}
+	}
+	#footer {
+		text-align: center;
+		.social-links {
+			margin: auto;
+			margin-top: 20px;
 		}
 	}
 }

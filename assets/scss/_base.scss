@@ -276,7 +276,7 @@ a {
 	text-decoration: none;
 }
 a:visited {
-	color: #800080;
+	color: darken($color: $mainColor, $amount: 10%);
 }
 a:hover,
 a:focus,
