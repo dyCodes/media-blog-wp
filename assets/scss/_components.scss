@@ -1,20 +1,15 @@
 /*!----- BLOG COMPONENTS -------*/
-article.post {
-	margin-bottom: 30px;
-	border-radius: 10px;
-	overflow: hidden;
-
-	.entry-meta ul._flex {
-		flex-wrap: wrap;
-	}
-
+article {
 	.card-body {
 		padding-top: 25px;
 	}
 	.entry-meta {
 		padding-top: 6px;
 		text-transform: capitalize;
-
+		ul {
+			flex-wrap: wrap;
+			margin-bottom: 5px;
+		}
 		li {
 			color: $textGray;
 			font-size: 15px;
@@ -28,17 +23,21 @@ article.post {
 		}
 	}
 	.entry-title {
-		a {
-			color: #222;
-		}
 	}
 	.entry-content {
-		margin: 16px 0;
+		margin: 18px 0;
 	}
-	a.post-edit-link {
-		display: inline-block;
-		margin: 10px 0;
-	}
+}
+
+a.post-edit-link {
+	display: inline-block;
+	// margin: 10px 0;
+}
+
+.navigation.post-navigation {
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	padding: 15px 0;
 }
 
 .wp-block-latest-posts__list,

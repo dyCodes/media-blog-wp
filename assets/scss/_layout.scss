@@ -160,9 +160,11 @@ main {
 
 /*!----- BLOG SIDEBAR SECTION -------*/
 aside#secondary {
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
 	padding: 30px;
 	margin-bottom: 20px;
+	border-radius: 8px;
+	border: 1px solid #00000020;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px;
 
 	.widget {
 		margin-bottom: 40px;
@@ -295,6 +297,9 @@ aside#secondary {
 		}
 	}
 	main {
+		.col-lg-4 {
+    padding-right: 0;
+}
 		.cover_title .container {
 			flex-direction: column-reverse;
 		}

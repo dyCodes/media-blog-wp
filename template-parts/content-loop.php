@@ -14,7 +14,7 @@
 
     <?php media_blog_post_thumbnail(); ?>
 
-    <div class="card-body">
+    <div class="post-entry card-body">
 
         <?php the_title('<h2 class="entry-title h2"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>'); ?>
 
