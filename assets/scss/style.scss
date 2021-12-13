@@ -115,7 +115,7 @@
 /*!----- BLOG POST LOOP -------*/
 article.card {
 	margin-bottom: 30px;
-	overflow: hidden;                 
+	overflow: hidden;
 	border-radius: 8px;
 	box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
 
@@ -147,6 +147,14 @@ body.single-post {
 				font-size: 13px;
 				padding: 4px 12px;
 			}
+		}
+	}
+	// Post navigation
+	.post-navigation .nav-links {
+		display: flex;
+		justify-content: space-between;
+		i {
+			padding: 5px;
 		}
 	}
 }

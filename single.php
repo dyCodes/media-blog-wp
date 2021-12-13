@@ -26,8 +26,8 @@ get_header();
 
 					the_post_navigation(
 						array(
-							'prev_text' => '<span class="nav-subtitle">' . esc_html__('Previous:', 'media-blog') . '</span> <span class="nav-title">%title</span>',
-							'next_text' => '<span class="nav-subtitle">' . esc_html__('Next:', 'media-blog') . '</span> <span class="nav-title">%title</span>',
+							'prev_text' => '<span class="nav-subtitle"> <i>&larr;</i>' . esc_html__('Previous Article', 'media-blog') . '</span>',
+							'next_text' => '<span class="nav-subtitle">' . esc_html__('Next Article', 'media-blog') . '<i>&rarr;</i> </span>',
 						)
 					);
 					

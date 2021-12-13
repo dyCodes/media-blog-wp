@@ -57,7 +57,7 @@ if (!function_exists('media_blog_entry_footer')) :
 			$tags_list = get_the_tag_list('','');
 			if ($tags_list) {
 				/* translators: 1: list of tags. */
-				printf('<ul class="tags"><b>Tags</b>' . esc_html__(' %1$s ', 'media-blog') . '</ul>', $tags_list);
+				printf('<ul class="tags"><b>Tags:</b>' . esc_html__(' %1$s ', 'media-blog') . '</ul>', $tags_list);
 			}
 		}
 

@@ -21,7 +21,7 @@ if (post_password_required()) {
 }
 ?>
 
-<div id="comments" class="blog-comments mt-4">
+<div id="comments" class="blog-comments mt-5">
 
 	<?php
 	// You can start editing here -- including this comment!
