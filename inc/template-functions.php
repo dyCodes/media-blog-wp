@@ -62,3 +62,15 @@ function media_blog_excerpt_more($more)
 	return '...';
 }
 add_filter('excerpt_more', 'media_blog_excerpt_more');
+
+/**
+ * Filter the excerpt length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function media_blog_excerpt_length($length)
+{
+	return 20;
+}
+add_filter('excerpt_length', 'media_blog_excerpt_length');
