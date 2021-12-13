@@ -18,7 +18,7 @@
 				max-width: 225px;
 			}
 		}
-		
+
 		#searchForm {
 			width: 50%;
 			form {
@@ -188,7 +188,7 @@ aside#secondary {
 
 /*!----- FOOTER -------*/
 #footer {
-	padding: 20px;
+	padding: 25px 10px;
 	background: #111;
 	margin-top: 40px;
 
@@ -199,8 +199,11 @@ aside#secondary {
 		color: #bbb;
 		margin: 0;
 	}
-	.social a i {
-		font-size: 22px;
+	.social a {
+		padding: 5px;
+		i {
+			font-size: 22px;
+		}
 	}
 
 	// Back2Top BUTTON
@@ -304,6 +307,9 @@ aside#secondary {
 		.social-links {
 			margin: auto;
 			margin-top: 20px;
+			li:first-of-type {
+				margin: 0 !important;
+			}
 		}
 	}
 }

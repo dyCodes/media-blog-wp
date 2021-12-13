@@ -41,11 +41,16 @@
 
 			.card-body {
 				width: 100%;
-				padding: 16px 20px;
-				padding-top: 50px;
+				padding: 18px 20px;
+				padding-top: 60px;
 				position: absolute;
 				bottom: 0;
-				background: linear-gradient(#0000, rgba(34, 34, 34, 0.85), #222);
+				background: linear-gradient(
+					#0000,
+					rgba(34, 34, 34, 0.4),
+					rgba(34, 34, 34, 0.75),
+					#222
+				);
 
 				.entry-meta li {
 					a,
@@ -55,7 +60,7 @@
 				}
 				.category {
 					position: absolute;
-					top: 10px;
+					top: 15px;
 					a {
 						color: #fff !important;
 						font-size: 13px;
@@ -66,6 +71,10 @@
 						border-radius: 16px;
 						text-transform: uppercase;
 						margin-bottom: 14px;
+
+						&:hover {
+							color: $black !important;
+						}
 					}
 				}
 				.entry-title {
@@ -95,7 +104,7 @@
 			}
 		}
 		.swiper-pagination.swiper-pagination-bullets {
-			bottom: 20px;
+			bottom: 30px;
 			.swiper-pagination-bullet-active {
 				background: $mainColor;
 			}
