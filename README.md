@@ -2,7 +2,7 @@
 
 ## About
 
-Media Blog Theme is a modern, clean and stylish blog WordPress theme created with Bootstrap 5 framework. It is perfect for any type of blog websites including news, fashion, lifestyle, food, travel, magazine, online journal websites.
+Media Blog is a modern, clean and stylish WordPress blog theme created with Bootstrap 5 framework. It is perfect for any type of blog websites including news, fashion, lifestyle, food, travel, magazine, online journal websites.
 
 <img src="./assets/img/screenshot.png" width="400px" />
 
